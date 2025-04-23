@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SimplyBook.me Dashboard Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* ==== Layout ==== */
+        body {
+            overflow-x: hidden;
+        }
+
+        /* 1) Make the sidebar fixed */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 240px;
+            height: 100vh;
+            background-color: #28a745;
+            /* green */
+            padding-top: 1rem;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        /* 2) Push everything else over */
+        #content {
+            margin-left: 240px !important;
+            transition: margin-left .2s;
+        }
+
+        /* 3) Sidebar link colors */
+        #sidebar .nav-link,
+        #sidebar .nav-link .icon {
+            color: #fff;
+        }
+
+        #sidebar .nav-link:hover,
+        #sidebar .nav-item.active>.nav-link {
+            color: #006EDC !important;
+        }
+
+        #sidebar .nav-link:hover .icon,
+        #sidebar .nav-item.active>.nav-link .icon {
+            color: #006EDC !important;
+        }
+
+        /* 4) Submenu collapse indentation */
+        #sidebar .collapse .nav-link {
+            color: #fff;
+            font-size: .95rem;
+            padding-left: 1.5rem;
+        }
+
+        #sidebar .collapse .nav-link:hover {
+            color: #006EDC !important;
+        }
+
+
+        /* ==== Topbar ==== */
+        .topbar {
+            height: 56px;
+            background: #fff;
+            border-bottom: 1px solid #e9ecef;
+            padding: 0 .75rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .topbar .btn-toggle {
+            font-size: 1.25rem;
+            background: none;
+            border: none;
+            color: #263447;
+        }
+
+        .topbar .top-icons .btn {
+            color: #495057;
+            position: relative;
+            margin-left: .5rem;
+        }
+
+        .topbar .top-icons .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(25%, -25%);
+            font-size: .6rem;
+        }
+
+        .topbar .btn-channels {
+            background-color: #00C896;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* ==== Carousel ==== */
+        .carousel-inner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* ==== Playlist ==== */
+        .playlist .list-group-item {
+            border: none;
+            padding: .75rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .playlist .list-group-item:hover {
+            background: #f8f9fa;
+        }
+
+        .playlist .play-icon {
+            font-size: 1.25rem;
+            color: #00C896;
+            margin-right: .75rem;
+        }
+
+        /* ==== Help button ==== */
+        .help-center {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background: #00C896;
+            color: #fff;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="sidebar" class="nav-collapse">
+        <ul class="nav flex-column sidebar-menu">
+
+            <!-- simple item -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/v2/welcome" title="Welcome">
+                    <i class="fa fa-lightbulb icon"></i>
+                    <span class="txt">Welcome</span>
+                </a>
+            </li>
+
+            <!-- another simple item -->
+            <li class="nav-item">
+                <a class="nav-link" href="/v2/index/index" title="Calendar">
+                    <i class="fa fa-calendar icon"></i>
+                    <span class="txt">Calendar</span>
+                </a>
+            </li>
+
+            <!-- Manage submenu -->
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="#submenuManage" role="button" aria-expanded="false" aria-controls="submenuManage"
+                    title="Manage">
+                    <span>
+                        <i class="fa fa-pencil icon"></i>
+                        <span class="txt">Manage</span>
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="nav flex-column collapse ps-3" id="submenuManage">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/management/#providers" title="Service Providers">
+                            <span class="txt">Service Providers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/management/#calendar-note-types" title="Calendar note types">
+                            <span class="txt">Calendar note types</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Reports submenu -->
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="#submenuReports" role="button" aria-expanded="false" aria-controls="submenuReports"
+                    title="Reports">
+                    <span>
+                        <i class="fa fa-chart-bar icon"></i>
+                        <span class="txt">Reports</span>
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="nav flex-column collapse ps-3" id="submenuReports">
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/r/#/reports/calendar-notes" title="Calendar notes report">
+                            <span class="txt">Calendar notes report</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/r/#/reports/gdpr" title="Personal data">
+                            <span class="txt">Personal data</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <!-- Settings submenu -->
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="#submenusetting" role="button" aria-expanded="false" aria-controls="submenusetting"
+                    title="Settings">
+                    <span>
+                        <i class="fa fa-cog icon""></i>
+                        <span class=" txt">Settings</span>
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="nav flex-column collapse ps-3" id="submenusetting">
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/management/#providers-worktime" title=" Providers schedule">
+                            <span class="txt">Providers schedule</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+            <!-- Help submenu -->
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    href="https://help.simplybook.me" role="button" aria-expanded="false" aria-controls="submenuhelp"
+                    title="Help">
+                    <span>
+                        <i class="fa fa-comment icon"></i>
+                        <span class=" txt">Help</span>
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="nav flex-column collapse ps-3" id="submenuhelp">
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/management/#providers-worktime" title=" Providers schedule">
+                            <span class="txt">Providers schedule</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <!-- Help submenu -->
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    role="button" aria-expanded="false" href="https://help.simplybook.me" aria-controls="submenuhelp"
+                    title="Help">
+                    <span>
+                        <i class="fa fa-comment icon"></i>
+                        <span class="txt">Help</span>
+                    </span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="nav flex-column collapse ps-3" id="submenuhelp">
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" title="Live Chat" data-email="saud.sawhney@zip24.com"
+                            data-name="Test Provider">
+                            <span class="txt">Live Chat</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://help.simplybook.me" target="_blank" title="Help Center">
+                            <span class="txt">Help Center</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://simplybook.me/en/faq" target="_blank" title="FAQ">
+                            <span class="txt">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCQrqBCwg_C-Q6DaAQVA-U2Q"
+                            target="_blank" title="Video tutorials">
+                            <span class="txt">Video tutorials</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://news.simplybook.me" target="_blank" title="Our blog">
+                            <span class="txt">Our blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://simplybookme.upvotyfeedback.com/?board" target="_blank"
+                            title="Feature Voting Board">
+                            <span class="txt">Feature Voting Board</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <!-- Bottom account menu -->
+        <ul class="nav flex-column sidebar-menu sidebar-menu--bottom mt-auto">
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item sub-menu position-relative nav-item--account">
+                <a class="nav-link dropdown-toggle" href="/user/?show-profile=1" title="Admin">
+                    <i class="fa fa-user-circle icon"></i>
+                    <span class="txt ellipsis">Test Provider</span>
+                </a>
+                <ul class="nav flex-column sub">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/v2/account-info" title="Account info">
+                            <span class="txt">Account info</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="darkModeToggle btn--dark-mode-switcher nav-link">
+                            <i class="far fa-sun mode--light"></i>
+                            <i class="far fa-moon-stars mode--dark"></i>
+                            <span class="txt dark-mode-switcher--txt-dark">switch to dark mode</span>
+                            <span class="txt dark-mode-switcher--txt-white">switch to light mode</span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="/logout?_csrf_token=e485add0f0d182b7514a271d527a1d7a"
+                            title="Log out">
+                            <span class="txt">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Mobile App button -->
+        <div class="app-links p-3">
+            <button type="button" class="btn btn-outline-light w-100" id="sb_mobile_app_login">
+                <i class="fa fa-mobile-alt me-2"></i>
+                <span class="txt wide-view">Mobile App</span>
+                <span class="txt narrow-view">App</span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div id="content">
+        <!-- Topbar -->
+        <div class="topbar d-flex justify-content-end align-items-center px-3"
+            style="height:56px; background:#fff; border-bottom:1px solid #e9ecef;">
+            <button class="btn position-relative me-2"><i class="fas fa-bell"></i><span
+                    class="badge bg-warning">5</span></button>
+            <button class="btn position-relative me-2"><i class="fas fa-envelope"></i><span
+                    class="badge bg-danger">1</span></button>
+            <button class="btn me-2"><i class="fas fa-calendar-check"></i></button>
+            <button class="btn btn-channels"><i class="fas fa-link me-1"></i>My booking channels <i
+                    class="fas fa-chevron-down ms-1"></i></button>
+        </div>
+
+        <div class="container-fluid my-4">
+            <!-- Alert -->
+            <div class="alert alert-warning d-flex justify-content-between align-items-center">
+                To accept and issue invoices, please configure SBPay.me (Free) – Click <a href="#"
+                    class="fw-bold ms-1">here</a> to set it up.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+
+            <!-- Main Row -->
+            <div class="row">
+                <!-- Carousel -->
+                <div class="col-lg-8 mb-4">
+                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/800x350" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Beauty Demo</h5>
+                                    <button class="btn btn-sm btn-primary">Book Now</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x350?text=Slide+2" class="d-block w-100"
+                                    alt="Slide 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Playlist -->
+                <div class="col-lg-4 mb-4">
+                    <h5>Check out our useful playlist</h5>
+                    <ul class="list-group playlist">
+                        <li class="list-group-item">
+                            <div><i class="fas fa-play-circle play-icon"></i>SimplyBook.me: How it works<span
+                                    class="text-muted small ms-2">1:13</span></div>
+                            <i class="fas fa-chevron-right text-secondary"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <div><i class="fas fa-play-circle play-icon"></i>How to customize the design…<span
+                                    class="text-muted small ms-2">3:19</span></div>
+                            <i class="fas fa-chevron-right text-secondary"></i>
+                        </li>
+                        <li class="list-group-item">
+                            <div><i class="fas fa-play-circle play-icon"></i>How to configure Working Hours<span
+                                    class="text-muted small ms-2">2:51</span></div>
+                            <i class="fas fa-chevron-right text-secondary"></i>
+                        </li>
+                        <!-- add more items here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help center button -->
+        <a href="#" class="help-center" title="Help center">
+            <i class="fas fa-question"></i>
+        </a>
+
+    </div><!-- /#content -->
+
+    <!-- Bootstrap 5 JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Sidebar toggle
+        document.getElementById('sidebarCollapse').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+            document.getElementById('content').classList.toggle('collapsed');
+        });
+        // Enable all tooltips (for any future data-bs-toggle="tooltip")
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+    </script>
+</body>
+
+</html>

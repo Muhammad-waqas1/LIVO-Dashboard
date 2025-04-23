@@ -1,0 +1,1535 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/vector-map/jqvmap.css">
+    <link rel="stylesheet" href="assets/vendor/jvectormap/jquery-jvectormap-2.0.2.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link href="documentation\css\init.css" rel="stylesheet">
+    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">Concept</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                    class="indicator"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-2.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Jeremy
+                                                            Rakestraw</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-3.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">John Abraham</span>is
+                                                        now following you
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-4.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Monaan Pechi</span> is
+                                                        watching your main repository
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-5.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Jessica
+                                                            Caruso</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                            <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                <li class="connection-list">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/github.png"
+                                                    alt=""> <span>Github</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png"
+                                                    alt=""> <span>Dribbble</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png"
+                                                    alt=""> <span>Dropbox</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/bitbucket.png"
+                                                    alt=""> <span>Bitbucket</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png"
+                                                    alt=""><span>Mail chimp</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/slack.png"
+                                                    alt=""> <span>Slack</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="conntection-footer"><a href="#">More</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="dashboard-sales.html" aria-expanded="false"
+                                    data-target="#submenu-1" aria-controls="submenu-1"><i
+                                        class="fa fa-fw fa-user-circle"></i>Dashboard <span
+                                        class="badge badge-success">6</span></a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-2" aria-controls="submenu-2"><i
+                                        class="fa fa-fw fa-rocket"></i>UI Elements</a>
+                                <div id="submenu-2" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/cards.html">Cards <span
+                                                    class="badge badge-secondary">New</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/general.html">General</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/carousel.html">Carousel</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/listgroup.html">List Group</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/typography.html">Typography</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/accordions.html">Accordions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/tabs.html">Tabs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-3" aria-controls="submenu-3"><i
+                                        class="fas fa-fw fa-chart-pie"></i>Chart</a>
+                                <div id="submenu-3" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-c3.html">C3 Charts</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-chartist.html">Chartist Charts</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-charts.html">Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-morris.html">Morris</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-sparkline.html">Sparkline</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-gauge.html">Guage</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-4" aria-controls="submenu-4"><i
+                                        class="fab fa-fw fa-wpforms"></i>Forms</a>
+                                <div id="submenu-4" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/form-elements.html">Form Elements</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/form-validation.html">Parsely
+                                                Validations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/multiselect.html">Multiselect</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/datepicker.html">Date Picker</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/bootstrap-select.html">Bootstrap Select</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-5" aria-controls="submenu-5"><i
+                                        class="fas fa-fw fa-table"></i>Tables</a>
+                                <div id="submenu-5" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/general-table.html">General Tables</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-divider">
+                                Features
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i>
+                                    Pages </a>
+                                <div id="submenu-6" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/blank-page.html">Blank Page</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/blank-page-header.html">Blank Page
+                                                Header</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/login.html">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/404-page.html">404 page</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/sign-up.html">Sign up Page</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/forgot-password.html">Forgot Password</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/pricing.html">Pricing Tables</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/timeline.html">Timeline</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/calendar.html">Calendar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                                href="pages/sortable-nestable-lists.html">Sortable/Nestable List</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/widgets.html">Widgets</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/media-object.html">Media Objects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/cropper-image.html">Cropper</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/color-picker.html">Color Picker</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-7" aria-controls="submenu-7"><i
+                                        class="fas fa-fw fa-inbox"></i>Apps <span
+                                        class="badge badge-secondary">New</span></a>
+                                <div id="submenu-7" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/inbox.html">Inbox</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/email-details.html">Email Detail</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/email-compose.html">Email Compose</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/message-chat.html">Message Chat</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-8" aria-controls="submenu-8"><i
+                                        class="fas fa-fw fa-columns"></i>Icons</a>
+                                <div id="submenu-8" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-fontawesome.html">FontAwesome Icons</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-material.html">Material Icons</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-simple-lineicon.html">Simpleline
+                                                Icon</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-themify.html">Themify Icon</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-flag.html">Flag Icons</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/icon-weather.html">Weather Icon</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-9" aria-controls="submenu-9"><i
+                                        class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
+                                <div id="submenu-9" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/map-google.html">Google Maps</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/map-vector.html">Vector Maps</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-10" aria-controls="submenu-10"><i
+                                        class="fas fa-f fa-folder"></i>Menu Level</a>
+                                <div id="submenu-10" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Level 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                                data-target="#submenu-11" aria-controls="submenu-11">Level 2</a>
+                                            <div id="submenu-11" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Level 2</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Level 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div id="company-dashboard" class="company-dashboard">
+                <div id="company-dashboard" class="container-fluid">
+                    <div class="row dashboard-base-info mt-4">
+
+                        <!-- bookings today / this week / workload / revenues -->
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card info-card">
+                                <div class="card-header">
+                                    <span class="info-title">Bookings today</span>
+                                    <div class="header-actions">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" title="View"><i
+                                                class="fas fa-eye"></i></a>
+                                        <i class="fas fa-info-circle text-secondary ml-2" data-toggle="tooltip"
+                                            title="Total non‑cancelled bookings for today"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="totals">
+                                        <div class="total-number">0</div>
+                                        <div class="total-shift up">
+                                            <span class="shift-text">0%</span>
+                                        </div>
+                                    </div>
+                                    <div class="dates text-secondary">22‑04‑2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card info-card">
+                                <div class="card-header">
+                                    <span class="info-title">Bookings this week</span>
+                                    <div class="header-actions">
+                                        <a href="#" class="btn btn-sm btn-outline-primary" title="View"><i
+                                                class="fas fa-eye"></i></a>
+                                        <i class="fas fa-info-circle text-secondary ml-2" data-toggle="tooltip"
+                                            title="All active bookings for this calendar week"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="totals">
+                                        <div class="total-number">0</div>
+                                        <div class="total-shift up">
+                                            <span class="shift-text">0%</span>
+                                        </div>
+                                    </div>
+                                    <div class="dates text-secondary">21‑04‑2025 – 27‑04‑2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card info-card">
+                                <div class="card-header">
+                                    <span class="info-title">Workload this week</span>
+                                    <i class="fas fa-info-circle text-secondary ml-2" data-toggle="tooltip"
+                                        title="Total hours of bookings this week"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="totals">
+                                        <div class="total-number">0<span class="unit">h</span></div>
+                                        <div class="total-shift up">
+                                            <span class="shift-text">0%</span>
+                                        </div>
+                                    </div>
+                                    <div class="dates text-secondary">21‑04‑2025 – 27‑04‑2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card info-card">
+                                <div class="card-header">
+                                    <span class="info-title">Revenues this week</span>
+                                    <i class="fas fa-info-circle text-secondary ml-2" data-toggle="tooltip"
+                                        title="Total revenue (PKR) this week"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="totals">
+                                        <div class="total-number">0 <span class="unit">PKR</span></div>
+                                        <div class="total-shift up">
+                                            <span class="shift-text">0%</span>
+                                        </div>
+                                    </div>
+                                    <div class="dates text-secondary">21‑04‑2025 – 27‑04‑2025</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- visits previous week -->
+                        <div class="col-12 col-lg-8 mb-4">
+                            <div class="card info-card">
+                                <div class="card-header">
+                                    <span class="info-title">Visits previous week</span>
+                                    <i class="fas fa-info-circle text-secondary ml-2" data-toggle="tooltip"
+                                        title="Total visits last week vs this week"></i>
+                                </div>
+                                <div class="card-body">
+                                    <div class="totals">
+                                        <div class="total-number">28</div>
+                                        <div class="total-shift up">
+                                            <span class="shift-text">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="dates text-secondary">
+                                        <small>14‑04‑2025 – 20‑04‑2025</small><br>
+                                        <small>21‑04‑2025 – 27‑04‑2025</small>
+                                    </div>
+                                    <div class="mt-2">
+                                        <small>Bookings per visit: <strong>0%</strong></small><br>
+                                        <small>Growth: <strong>0%</strong></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- your current tariff -->
+                        <div class="col-12 col-lg-4 mb-4">
+                            <div class="card tariff-card">
+                                <div class="card-header">
+                                    <span class="info-title">Your current tariff is: <strong>Trial</strong></span>
+                                    <i class="fas fa-gem text-secondary ml-2"></i>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled mb-0">
+                                        <li>Valid Until <span class="float-right">02‑05‑2025</span></li>
+                                        <li>Days Left <span class="float-right">10</span></li>
+                                        <li>SMS Credits Left <span class="float-right">0</span></li>
+                                        <li>WhatsApp Credits <span class="float-right">0</span></li>
+                                        <li>Bookings Left <span class="float-right">50</span></li>
+                                        <li>Custom Features <span class="float-right">&infin;</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--            </div>-->
+
+                <!-- bookings block -->
+                <!--            <div class="col-xl-7 block-customize bookings-block-wrap">-->
+                <div class="dashboard-bookings">
+                    <div class="card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs custom-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tab1a" data-toggle="tab" role="tab">
+                                        <span>Upcoming bookings</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#tab2a" class="nav-link" data-toggle="tab" role="tab">
+                                        <span>Recently added bookings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="tab1a" role="tabpanel">
+                                    <div class="table-responsive sb-table">
+                                        <table class="table table-list table-dashboard-block">
+                                            <thead>
+                                                <tr>
+                                                    <th data-sort-by="company_login" class="hidden-xs">
+                                                        Date
+                                                    </th>
+                                                    <th data-sort-by="company_login" class="hidden-xs">
+                                                        Service duration
+                                                    </th>
+                                                    <th data-sort-by="company_login" class="hidden-xs">
+                                                        Service name
+                                                    </th>
+                                                    <th data-sort-by="company_login" class="hidden-xs">
+                                                        Client
+                                                    </th>
+                                                    <th data-sort-by="company_login" class="hidden-xs">
+
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="5" class="empty-list-div text-center">
+                                                        <div class="empty-table">
+                                                            <img
+                                                                src="/react-admin/assets/images/birds/bird__empty-bboking-table.svg">
+                                                            <p class="p p--secondary">List of your upcoming booking
+                                                                will be presented here</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab2a" role="tabpanel">
+                                    <div class="recently-content">
+                                        <div class="table-responsive sb-table">
+                                            <table class="table table-list table-dashboard-block">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-sort-by="company_login" class="hidden-xs">
+                                                            Date
+                                                        </th>
+                                                        <th data-sort-by="company_login" class="hidden-xs">
+                                                            Service duration
+                                                        </th>
+                                                        <th data-sort-by="company_login" class="hidden-xs">
+                                                            Service name
+                                                        </th>
+                                                        <th data-sort-by="company_login" class="hidden-xs">
+                                                            Client
+                                                        </th>
+                                                        <th data-sort-by="company_login" class="hidden-xs">
+
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5" class="empty-list-div text-center">
+                                                            <div class="empty-table">
+                                                                <img
+                                                                    src="/react-admin/assets/images/birds/bird__empty-bboking-table.svg">
+                                                                <p class="p p--secondary">List of your bookings for
+                                                                    the last week will be here</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="detailed-link">
+                            <a href="/report/index" target="_blank">
+                                Show all bookings
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--            </div>-->
+                <!--        </div>-->
+
+                <div>
+                    <div class="dashboard-filter--wrapper">
+                        <div class="dashboard-filter">
+                            <div class="dashboard-filter__info">
+                                <div class="dashboard-filter__info-image">
+                                    <img src="https://shopinder.secure.simplybook.asia/v2/images/admin/icons/filter-icon.svg"
+                                        alt="Filter icon">
+                                </div>
+                                <div class="dashboard-filter__info-content">
+                                    <h3 class="dashboard-filter__info-title">Filter</h3>
+                                    <p class="dashboard-filter__info-text">Set data filters for period to the
+                                        insights below</p>
+                                    <p class="dashboard-filter__info-reset dashboard-filter-set-default">Set default
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dashboard-filter__data">
+                                <div class="dashboard-filter__data-filter">
+                                    <div class="dashboard-filter__data-period select-period btn-group btn-group--switcher nav"
+                                        id="dashboard-select-period" role="tablist">
+                                        <a data-ui="dayInput"
+                                            class="btn btn--secondary-outline dashboard-select-period-btn"
+                                            id="period-day-tab" data-toggle="tab" href="#period-day" role="tab"
+                                            aria-controls="period-day" aria-selected="false">
+                                            <span class="btn__txt">Day</span>
+                                        </a>
+                                        <a data-ui="weekInput"
+                                            class="btn btn--secondary-outline dashboard-select-period-btn active"
+                                            id="period-week-tab" data-toggle="tab" href="#period-week" role="tab"
+                                            aria-controls="period-week" aria-selected="true">
+                                            <span class="btn__txt">Week</span>
+                                        </a>
+                                        <a data-ui="monthInput"
+                                            class="btn btn--secondary-outline dashboard-select-period-btn"
+                                            id="period-month-tab" data-toggle="tab" href="#period-month" role="tab"
+                                            aria-controls="period-month" aria-selected="false">
+                                            <span class="btn__txt">Month</span>
+                                        </a>
+                                        <a data-ui="yearInput"
+                                            class="btn btn--secondary-outline dashboard-select-period-btn"
+                                            id="period-year-tab" data-toggle="tab" href="#period-year" role="tab"
+                                            aria-controls="period-year" aria-selected="false">
+                                            <span class="btn__txt">Year</span>
+                                        </a>
+                                        <a data-ui="dateFromInput"
+                                            class="btn btn--secondary-outline dashboard-select-period-btn"
+                                            id="period-date-range-tab" data-toggle="tab" href="#period-date-range"
+                                            role="tab" aria-controls="period-date-range" aria-selected="false">
+                                            <span class="btn__txt">Date range</span>
+                                        </a>
+                                    </div>
+                                    <div class="dashboard-filter__data-input tab-content row mt-3"
+                                        id="dashboard-select-periodContent">
+                                        <div class="col-12 tab-pane fade" id="period-day" role="tabpanel"
+                                            aria-labelledby="period-day-tab">
+                                            <label for="period-day-input">
+                                                <span class="k-widget k-datepicker k-header datepicker form-control"
+                                                    style=""><span class="k-picker-wrap k-state-default"><input
+                                                            type="text" readonly="readonly" id="period-day-input"
+                                                            class="datepicker form-control k-input"
+                                                            data-role="datepicker" role="combobox" aria-expanded="false"
+                                                            aria-owns="period-day-input_dateview" aria-disabled="false"
+                                                            aria-readonly="true" style="width: 100%;"><span
+                                                            unselectable="on" class="k-select" role="button"
+                                                            aria-controls="period-day-input_dateview"><span
+                                                                unselectable="on"
+                                                                class="k-icon k-i-calendar">select</span></span></span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 tab-pane fade show active" id="period-week" role="tabpanel"
+                                            aria-labelledby="period-week-tab">
+                                            <label for="period-week-input">
+                                                <span class="k-widget k-datepicker k-header datepicker form-control"
+                                                    style=""><span class="k-picker-wrap k-state-default"><input
+                                                            type="text" readonly="readonly" id="period-week-input"
+                                                            class="datepicker form-control k-input"
+                                                            data-role="datepicker" role="combobox" aria-expanded="false"
+                                                            aria-owns="period-week-input_dateview" aria-disabled="false"
+                                                            aria-readonly="true" style="width: 100%;"><span
+                                                            unselectable="on" class="k-select" role="button"
+                                                            aria-controls="period-week-input_dateview"><span
+                                                                unselectable="on"
+                                                                class="k-icon k-i-calendar">select</span></span></span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 tab-pane fade" id="period-month" role="tabpanel"
+                                            aria-labelledby="period-month-tab">
+                                            <label for="period-month-input">
+                                                <span class="k-widget k-datepicker k-header datepicker form-control"
+                                                    style=""><span class="k-picker-wrap k-state-default"><input
+                                                            type="text" readonly="readonly" id="period-month-input"
+                                                            class="datepicker form-control k-input"
+                                                            data-role="datepicker" role="combobox" aria-expanded="false"
+                                                            aria-owns="period-month-input_dateview"
+                                                            aria-disabled="false" aria-readonly="true"
+                                                            style="width: 100%;"><span unselectable="on"
+                                                            class="k-select" role="button"
+                                                            aria-controls="period-month-input_dateview"><span
+                                                                unselectable="on"
+                                                                class="k-icon k-i-calendar">select</span></span></span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 tab-pane fade" id="period-year" role="tabpanel"
+                                            aria-labelledby="period-year-tab">
+                                            <label for="period-year-input">
+                                                <span class="k-widget k-datepicker k-header datepicker form-control"
+                                                    style=""><span class="k-picker-wrap k-state-default"><input
+                                                            type="text" readonly="readonly" id="period-year-input"
+                                                            class="datepicker form-control k-input"
+                                                            data-role="datepicker" role="combobox" aria-expanded="false"
+                                                            aria-owns="period-year-input_dateview" aria-disabled="false"
+                                                            aria-readonly="true" style="width: 100%;"><span
+                                                            unselectable="on" class="k-select" role="button"
+                                                            aria-controls="period-year-input_dateview"><span
+                                                                unselectable="on"
+                                                                class="k-icon k-i-calendar">select</span></span></span></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 tab-pane plugins-form fade" id="period-date-range"
+                                            role="tabpanel" aria-labelledby="period-date-range-tab">
+                                            <div
+                                                class="field-container grid-x-gap-8 grid-y-gap-8 align--bottom to-col-on-mob">
+                                                <div class="field-container--item">
+                                                    <label for="period-date-range-from">
+                                                        <span
+                                                            class="k-widget k-datepicker k-header datepicker form-control"
+                                                            style=""><span class="k-picker-wrap k-state-default"><input
+                                                                    type="text" readonly="readonly"
+                                                                    id="period-date-range-from"
+                                                                    class="datepicker form-control k-input"
+                                                                    data-role="datepicker" role="combobox"
+                                                                    aria-expanded="false"
+                                                                    aria-owns="period-date-range-from_dateview"
+                                                                    aria-disabled="false" aria-readonly="true"
+                                                                    style="width: 100%;"><span unselectable="on"
+                                                                    class="k-select" role="button"
+                                                                    aria-controls="period-date-range-from_dateview"><span
+                                                                        unselectable="on"
+                                                                        class="k-icon k-i-calendar">select</span></span></span></span>
+                                                    </label>
+                                                </div>
+                                                <div class="field-container--item">
+                                                    <label for="period-date-range-to">
+                                                        <span
+                                                            class="k-widget k-datepicker k-header datepicker form-control"
+                                                            style=""><span class="k-picker-wrap k-state-default"><input
+                                                                    type="text" readonly="readonly"
+                                                                    id="period-date-range-to"
+                                                                    class="datepicker form-control k-input"
+                                                                    data-role="datepicker" role="combobox"
+                                                                    aria-expanded="false"
+                                                                    aria-owns="period-date-range-to_dateview"
+                                                                    aria-disabled="false" aria-readonly="true"
+                                                                    style="width: 100%;"><span unselectable="on"
+                                                                    class="k-select" role="button"
+                                                                    aria-controls="period-date-range-to_dateview"><span
+                                                                        unselectable="on"
+                                                                        class="k-icon k-i-calendar">select</span></span></span></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dashboard-filter__data-field select-field btn-group btn-group--switcher nav"
+                                        id="dashboard-select-field" role="tablist">
+                                        <a data-field="booking"
+                                            class="btn btn--secondary-outline dashboard-select-field-btn active"
+                                            id="booking-field-tab" data-toggle="tab" href="#booking-field" role="tab"
+                                            aria-controls="booking-field" aria-selected="false">
+                                            Booking date*
+                                        </a>
+                                        <a data-field="record"
+                                            class="btn btn--secondary-outline dashboard-select-field-btn"
+                                            id="record-field-tab" data-toggle="tab" href="#record-field" role="tab"
+                                            aria-controls="record-field" aria-selected="true">
+                                            Record date*
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="dashboard-filter-applied" class="dashboard-filter__data-applied" style="">
+                                    <p class="dashboard-filter__data-applied--highlighted">Filters applied</p>
+                                    <div>Filters applied to the insights below.</div>
+                                    <div>Period <span id="dashboard-filter-applied-date-range"
+                                            class="dashboard-filter__data-applied--range">21-04-2025 -
+                                            27-04-2025</span>
+                                    </div>
+                                    <div></div>
+                                    <div class="mt-3">
+                                        <small>
+                                            * If a client on September 1 created a booking on <br> September 10,
+                                            then September 1 is Record date, and <br> September 10 is Booking date
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-customize graph">
+
+                        <div class="card panel-dashboard-block activated">
+
+                            <div class="card-header d-flex justify-content-between dashboard-chart-header-container">
+                                <ul class="nav nav-tabs custom-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#chart-tab-1" data-toggle="tab" role="tab"
+                                            data-badge-content="Check out total number of bookings or bookings by provider.  Click on &quot;By Provider&quot; to see the split of bookings down to provider and click on the name of the provider to see bookings for only that specific provider.">
+                                            <span>Total bookings</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#chart-tab-2" class="nav-link" data-toggle="tab" role="tab"
+                                            data-badge-content="Workload Chart.  Click on &quot;By Provider&quot; to see workload by provider and click on provider´s name to see workload for only that specific provider.">
+                                            <span>Workload</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#chart-tab-3" class="nav-link" data-toggle="tab" role="tab"
+                                            data-badge-content="Payment systems Chart.  Click on &quot;By Provider&quot; to see the split of payment systems down to provider and click on the name of the provider to see payment systems for only that specific provider.">
+                                            <span>Payment Processors</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div id="dashboard_chart_badge" class="badge help-info" data-trigger="hover"
+                                    data-placement="right"
+                                    data-content="Check out total number of bookings or bookings by provider.  Click on &quot;By Provider&quot; to see the split of bookings down to provider and click on the name of the provider to see bookings for only that specific provider."
+                                    tabindex="0">
+                                    <i class="fa fas icon fa-info-square" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active dashboard-chart-bookings" id="chart-tab-1"
+                                        role="tabpanel">
+
+                                        <div class="chart-calendar">
+                                            <div class="row">
+                                                <div class="col-md-3" data-expended-class="col-md-4"
+                                                    data-expended-clear="1">
+                                                    <div class="legend-container">
+                                                        <div class="select-type">
+                                                            <div class="sb-radio d-inline-block">
+                                                                <input type="radio" class="custom-radio1"
+                                                                    id="chart-bookings-type1" name="chart-bookings-type"
+                                                                    checked="checked">
+                                                                <label for="chart-bookings-type1"
+                                                                    data-type="total">Total</label>
+                                                            </div>
+                                                            <div class="sb-radio d-inline-block">
+                                                                <input type="radio" class="custom-radio1"
+                                                                    id="chart-bookings-type2"
+                                                                    name="chart-bookings-type">
+                                                                <label for="chart-bookings-type2"
+                                                                    data-type="performer">By provider</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-legend-filter form-inline"
+                                                            data-expended-class="chart-legend-filter-expanded"
+                                                            style="display: none;">
+                                                            <div
+                                                                class="field-container grid-x-gap-8 align--center direction--row">
+                                                                <select class="form-control legend-select">
+                                                                    <option value="">Select</option>
+                                                                    <option value="-1">All</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="10">10</option>
+                                                                </select>
+
+                                                                <button
+                                                                    class="btn btn--secondary-outline btn--no-text btn--tooltip legend-sort-name order-asc"
+                                                                    data-sort="asc"><span class="btn__txt">Sort
+                                                                        alphabetically</span></button>
+
+                                                                <button
+                                                                    class="btn btn--secondary-outline btn--no-text btn--tooltip legend-sort-position order-asc"
+                                                                    data-sort="asc"><span class="btn__txt">Sort by
+                                                                        position</span></button>
+
+                                                                <input class="form-control legend-search" type="text"
+                                                                    name="search" placeholder="Provider name">
+
+                                                                <button
+                                                                    class="btn btn--primary-outline btn--no-text legend-reset">
+                                                                    <i class="fa icon fa-sync" aria-hidden="true"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-legend"
+                                                            data-expended-class="chart-legend-expanded">
+                                                            <div class="chart-legend-content" style="display: none;">
+
+                                                                <div data-performer-id="2" data-series-id="0"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#F9D230"></span> venpro
+                                                                </div>
+                                                                <div data-performer-id="3" data-series-id="1"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#54C9F7"></span> vendprov
+                                                                </div>
+                                                                <div data-performer-id="4" data-series-id="2"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#FC5656"></span> asd</div>
+                                                                <div data-performer-id="5" data-series-id="3"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#5CCE28"></span> asd</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-expand-btn-cont">
+                                                            <a href="#" target="_blank" class="expand-btn"
+                                                                data-expended-class="expanded">
+                                                                <span>
+                                                                    Expand
+                                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                                </span>
+                                                                <span class="expanded-text">
+                                                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                                    Hide
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9" data-expended-class="col-md-8"
+                                                    data-expended-clear="1">
+                                                    <div class="chart-container">
+                                                        <div class="chart" id="chart-bookings-chart"
+                                                            data-expended-class="test">
+                                                            <canvas id="chart-bookings-canvas" width="912" height="300"
+                                                                style="display: block; box-sizing: border-box; height: 300px; width: 912px;"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade dashboard-chart-workload" id="chart-tab-2"
+                                        role="tabpanel">
+                                        <div class="chart-calendar">
+                                            <div class="row" id="workload-record-date-warning" style="display: none;">
+                                                <div class="col-md-12">
+                                                    <div class="alert alert-warning">
+                                                        Please note! The data in this chart is available by booking
+                                                        date only
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3" data-expended-class="col-md-4"
+                                                    data-expended-clear="1">
+                                                    <div class="legend-container">
+                                                        <div class="select-type">
+                                                            <div class="sb-radio d-inline-block">
+                                                                <input type="radio" class="custom-radio1"
+                                                                    id="chart-workload-type1" name="chart-workload-type"
+                                                                    checked="checked">
+                                                                <label for="chart-workload-type1"
+                                                                    data-type="total">Total</label>
+                                                            </div>
+                                                            <div class="sb-radio d-inline-block">
+                                                                <input type="radio" class="custom-radio1"
+                                                                    id="chart-workload-type2"
+                                                                    name="chart-workload-type">
+                                                                <label for="chart-workload-type2"
+                                                                    data-type="performer">By provider</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-legend-filter form-inline"
+                                                            data-expended-class="chart-legend-filter-expanded"
+                                                            style="display: none;">
+                                                            <div
+                                                                class="field-container grid-x-gap-8 align--center direction--row">
+                                                                <select class="form-control legend-select">
+                                                                    <option value="">Select</option>
+                                                                    <option value="-1">All</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="10">10</option>
+                                                                </select>
+
+                                                                <button
+                                                                    class="btn btn--secondary-outline btn--no-text btn--tooltip legend-sort-name order-asc"
+                                                                    data-sort="asc"><span class="btn__txt">Sort
+                                                                        alphabetically</span></button>
+                                                                <button
+                                                                    class="btn btn--secondary-outline btn--no-text btn--tooltip legend-sort-position order-asc"
+                                                                    data-sort="asc"><span class="btn__txt">Sort by
+                                                                        position</span></button>
+
+                                                                <input class="form-control legend-search" type="text"
+                                                                    name="search" placeholder="Provider name">
+                                                                <button
+                                                                    class="btn btn--primary-outline btn--no-text legend-reset">
+                                                                    <i class="fa icon fa-sync" aria-hidden="true"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-legend"
+                                                            data-expended-class="chart-legend-expanded">
+                                                            <div class="chart-legend-content" style="display: none;">
+
+                                                                <div data-performer-id="2" data-series-id="0"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#F9D230"></span> venpro
+                                                                </div>
+                                                                <div data-performer-id="3" data-series-id="1"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#54C9F7"></span> vendprov
+                                                                </div>
+                                                                <div data-performer-id="4" data-series-id="2"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#FC5656"></span> asd</div>
+                                                                <div data-performer-id="5" data-series-id="3"
+                                                                    class="legend_name active"><span
+                                                                        style="background:#5CCE28"></span> asd</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-expand-btn-cont">
+                                                            <a href="#" target="_blank" class="expand-btn"
+                                                                data-expended-class="expanded">
+                                                                <span>
+                                                                    Expand
+                                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                                </span>
+
+                                                                <span class="expanded-text">
+                                                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                                                    Hide
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9" data-expended-class="col-md-8"
+                                                    data-expended-clear="1">
+                                                    <div class="chart-container">
+                                                        <!--<div class="hidden-sm col-md-4">
+                                                    <a href="#" class="save-pdf">
+                                                        PDF
+                                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                                    </a>
+                                                 </div>-->
+                                                        <div class="chart" id="chart-workload-chart">
+                                                            <canvas id="chart-workload-canvas" height="0"
+                                                                style="display: block; box-sizing: border-box; height: 0px; width: 0px;"
+                                                                width="0"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade dashboard-chart-payment-systems" id="chart-tab-3"
+                                        role="tabpanel">
+                                        <div class="activate-plugin-wrap">
+
+
+
+                                            <div class="activate-plugin-link">
+                                                Please activate Accept payments custom feature<br>
+                                                <a href="https://shopinder.secure.simplybook.asia/v2/plugin/activate-plugin/system_name/paid_events/activate_plugin/1?callback_url=/v2/dashboard/new&amp;_csrf_token=2ce59ca52055124e666ecdf1f02da2ba"
+                                                    class="btn btn-outline-light" target="_blank">Activate</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 block-customize popular-graph graph">
+                            <div class="card panel-dashboard-block dashboard-popular-providers">
+                                <div class="card-header">
+                                    Popular providers
+                                    <div class="badge help-info" data-trigger="hover" data-placement="right"
+                                        data-content="You can see here who was the best employee and how much he worked. Use this data to encourage your other employees to do their best!"
+                                        tabindex="0">
+                                        <i class="fa fas icon fa-info-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-table">
+                                        <div class="row custom-row">
+                                            <div class="col-md-3">
+                                                <div class="chart-container">
+                                                    <canvas class="chart" id="popular-performers-chart"
+                                                        style="display: none;"></canvas>
+                                                    <div class="no-chart">No data for this company</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <section class="table-responsive">
+                                                    <table class="table table-list popular-performers-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Provider</th>
+                                                                <th>% of all bookings</th>
+                                                                <th class="nowrap">Work time</th>
+                                                                <th>Total bookings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 block-customize popular-graph graph">
+                            <div class="card panel-dashboard-block dashboard-popular-services">
+                                <div class="card-header">
+                                    Popular services
+                                    <div class="badge help-info" data-trigger="hover" data-placement="right"
+                                        data-content="You can see here how many times your services were booked."
+                                        tabindex="0">
+                                        <i class="fa fas icon fa-info-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-table">
+                                        <div class="row custom-row">
+                                            <div class="col-md-3">
+                                                <div class="chart-container">
+                                                    <canvas class="chart" id="popular-services-chart"
+                                                        style="display: none;"></canvas>
+                                                    <div class="no-chart">No data for this company</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <section class="table-responsive">
+                                                    <table class="table table-list popular-services-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Service</th>
+                                                                <th>% of all bookings</th>
+                                                                <th class="nowrap">Work time</th>
+                                                                <th>Buffer time</th>
+                                                                <th>Total bookings</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td>N/A</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 block-customize graph">
+                            <div class="card panel-dashboard-block dashboard-client-activity-bookings empty-chart">
+                                <div class="card-header">
+                                    Client's bookings
+
+                                    <div class="badge help-info" data-trigger="hover" data-placement="right"
+                                        data-content="See bookings made in your system last week. Motivate your clients to book themselves so you get more free time to improve your business and service your clients on place."
+                                        tabindex="0">
+                                        <i class="fa fas icon fa-info-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-table">
+                                        <div class="row custom-row">
+                                            <div class="col-md-3">
+                                                <div class="chart-container">
+                                                    <canvas class="chart" id="cactivity-bookings-chart"
+                                                        style="display: none;"></canvas>
+                                                    <div class="no-chart">No data for this company</div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-9">
+
+                                                <div class="col-xs-12 empty-message">
+                                                    Here you will see the percentage of bookings made by your
+                                                    clients or by your employees.
+                                                </div>
+
+                                                <table class="table table-list popular-services-table"
+                                                    style="display: none;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Type</th>
+                                                            <th>% of all bookings</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr class="">
+                                                            <td>Bookings by clients</td>
+                                                            <td id="dashboard-client-activity-bookings-by-client">
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="">
+                                                            <td>Bookings by Admin/Employee</td>
+                                                            <td id="dashboard-client-activity-bookings-by-user">
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 block-customize graph">
+                            <div class="card panel-dashboard-block dashboard-client-activity-cancellations">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs custom-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#tabc1a" data-toggle="tab" role="tab">
+                                                <span>Client's cancellations</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#tabc2a" class="nav-link" data-toggle="tab" role="tab">
+                                                <span>Provider's cancellations</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="tabc1a" role="tabpanel">
+
+                                            <div class="chart-table">
+                                                <div class="client-cancellation-container empty-chart">
+                                                    <div class="row custom-row">
+                                                        <div class="col-md-3">
+                                                            <div class="chart-container">
+                                                                <canvas class="chart" id="cactivity-cancelation-chart"
+                                                                    style="display: none;"></canvas>
+                                                                <div class="no-chart">No data for this company</div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-md-9">
+                                                            <div class="col-xs-12 empty-message">
+                                                                Here you will see the percentage of cancellations
+                                                                made by your clients, employees or system.
+                                                            </div>
+
+                                                            <table class="table table-list popular-services-table"
+                                                                style="display: none;">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Type</th>
+                                                                        <th>% of all bookings</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="">
+                                                                        <td>Cancellations by clients</td>
+                                                                        <td id="client-cancellation-by-client"></td>
+                                                                    </tr>
+                                                                    <tr class="">
+                                                                        <td>Cancellations by admin/employee</td>
+                                                                        <td id="client-cancellation-by-user"></td>
+                                                                    </tr>
+                                                                    <tr class="">
+                                                                        <td>Cancellations by system</td>
+                                                                        <td id="client-cancellation-by-system"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="tabc2a" role="tabpanel">
+                                            <div class="chart-table">
+                                                <div class="provider-cancellation-container">
+                                                    <div class="chart-calendar">
+                                                        <div class="chart-container">
+                                                            <div class="chart" id="provider_chart"
+                                                                data-expended-class="test">
+                                                                <canvas id="provider_canvas" height="0"
+                                                                    style="display: block; box-sizing: border-box; height: 0px; width: 0px;"
+                                                                    width="0"></canvas>
+                                                                <div class="no-chart">No data for this company</div>
+                                                            </div>
+
+                                                            <div class="float-left"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        Copyright © 2018 Concept. All rights reserved. Dashboard by <a
+                            href="https://colorlib.com/wp/">Colorlib</a>.
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="javascript: void(0);">About</a>
+                            <a href="javascript: void(0);">Support</a>
+                            <a href="javascript: void(0);">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 js-->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap bundle js-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js-->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- chartjs js-->
+    <script src="assets/vendor/charts/charts-bundle/Chart.bundle.js"></script>
+    <script src="assets/vendor/charts/charts-bundle/chartjs.js"></script>
+
+    <!-- main js-->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- jvactormap js-->
+    <script src="assets/vendor/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="assets/vendor/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- sparkline js-->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <script src="assets/vendor/charts/sparkline/spark-js.js"></script>
+    <!-- dashboard sales js-->
+    <script src="assets/libs/js/dashboard-sales.js"></script>
+</body>
+
+</html>

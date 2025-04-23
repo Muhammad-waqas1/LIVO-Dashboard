@@ -1,0 +1,90 @@
+/* 2) The CSS */
+.info-card,
+.tariff-card {
+  background: #F2F8FF;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+.info-card .card-header,
+.tariff-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+.info-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #006EDC;
+}
+.header-actions .btn {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+}
+.header-actions .fa-info-circle {
+  cursor: pointer;
+}
+.info-card .card-body,
+.tariff-card .card-body {
+  padding: 1rem;
+}
+.totals {
+  display: flex;
+  align-items: flex-end;
+}
+.total-number {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #006EDC;
+  line-height: 1;
+  margin-right: .75rem;
+}
+.unit {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6C757D;
+}
+.total-shift {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+.total-shift.up .shift-text {
+  color: #28A745;
+}
+.total-shift.down .shift-text {
+  color: #DC3545;
+}
+.total-shift.up::before,
+.total-shift.down::before {
+  content: "";
+  display: inline-block;
+  width: 0; height: 0;
+  margin-right: .25rem;
+}
+.total-shift.up::before {
+  border-left: 5px solid transparent;
+  border-right:5px solid transparent;
+  border-bottom:8px solid #28A745;
+}
+.total-shift.down::before {
+  border-left: 5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:8px solid #DC3545;
+}
+.dates {
+  font-size: .875rem;
+  color: #6C757D;
+  margin-top: .5rem;
+}
+.tariff-card .list-unstyled li {
+  padding: .5rem 0;
+  border-bottom: 1px solid #E2E8F0;
+  font-size: .95rem;
+}
+.tariff-card .list-unstyled li:last-child {
+  border-bottom: none;
+}
