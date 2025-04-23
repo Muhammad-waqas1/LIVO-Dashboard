@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <!-- 1) Include Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
 </head>
 
@@ -388,76 +390,75 @@
                         <div class="card-header">Promotions</div>
                         <div class="card-body">
                             <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
+                                <div class="form">
+                                    <div class="form-group">
                                         <label for="promoName">Promotion Name</label>
                                         <input type="text" class="form-control form-control-sm" id="promoName"
                                             maxlength="100" required>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="servicesApplicable">Services Applicable</label>
-                                        <select id="servicesApplicable" class="form-control form-control-sm" multiple
-                                            required>
-                                            <!-- <option>Massage</option>
-                                            <option>Facial</option>
-                                            <option>Waxing</option> -->
-
-                                            <option value=""> Comprehensive Medical Evaluation and Consultation </option>
-                                            <option value=""> Follow Up Integrative Consultation </option>
-                                            <option value=""> Bioresonance Consultation </option>
-                                            <option value=""> Nutritionist Consultation </option>
-                                            <option value=""> Chiropractor Consultation </option>
-                                            <option value=""> DNA Core </option>
-                                            <option value=""> DNA Diet </option>
-                                            <option value=""> DNA Skin </option>
-                                            <option value=""> Dutch Complete </option>
+                                    <div class="form-group">
+                                        <label for="couponServices2">Services Applicable</label>
+                                        <select id="couponServices2"
+                                            class="form-control form-control-sm services-picker"
+                                            name="couponServices2[]" multiple="multiple">
+                                            <option value="med_eval">Comprehensive Medical Evaluation and
+                                                Consultation
+                                            </option>
+                                            <option value="follow_up">Follow Up Integrative Consultation</option>
+                                            <option value="bioreso">Bioresonance Consultation</option>
+                                            <option value="nutrition">Nutritionist Consultation</option>
+                                            <option value="chiro">Chiropractor Consultation</option>
+                                            <option value="dna_core">DNA Core</option>
+                                            <option value="dna_diet">DNA Diet</option>
+                                            <option value="dna_skin">DNA Skin</option>
+                                            <option value="dutch_complete">Dutch Complete</option>
                                         </select>
                                     </div>
-                                </div>
 
-                                <div class="form-row">
-                                    <div class="form-group col-sm-4">
-                                        <label for="discountType">Discount Type</label>
-                                        <select id="discountType" class="form-control form-control-sm" required>
-                                            <option value="percentage">Percentage</option>
-                                            <option value="fixed">Fixed Amount</option>
-                                        </select>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-4">
+                                            <label for="discountType">Discount Type</label>
+                                            <select id="discountType" class="form-control form-control-sm" required>
+                                                <option value="percentage">Percentage</option>
+                                                <option value="fixed">Fixed Amount</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="discountValue">Discount Value</label>
+                                            <input type="number" class="form-control form-control-sm" id="discountValue"
+                                                min="0" required>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="usageLimit">Usage Limit</label>
+                                            <input type="number" class="form-control form-control-sm" id="usageLimit"
+                                                min="1" placeholder="optional">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-4">
-                                        <label for="discountValue">Discount Value</label>
-                                        <input type="number" class="form-control form-control-sm" id="discountValue"
-                                            min="0" required>
-                                    </div>
-                                    <div class="form-group col-sm-4">
-                                        <label for="usageLimit">Usage Limit</label>
-                                        <input type="number" class="form-control form-control-sm" id="usageLimit"
-                                            min="1" placeholder="optional">
-                                    </div>
-                                </div>
 
-                                <div class="form-row">
-                                    <div class="form-group col-sm-6">
-                                        <label for="validFrom">Valid From</label>
-                                        <input type="date" class="form-control form-control-sm" id="validFrom" required>
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-6">
+                                            <label for="validFrom">Valid From</label>
+                                            <input type="date" class="form-control form-control-sm" id="validFrom"
+                                                required>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="validUntil">Valid Until</label>
+                                            <input type="date" class="form-control form-control-sm" id="validUntil"
+                                                required>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="validUntil">Valid Until</label>
-                                        <input type="date" class="form-control form-control-sm" id="validUntil"
-                                            required>
+
+                                    <div class="form-group">
+                                        <label for="promoCode">Promo Code</label>
+                                        <input type="text" class="form-control form-control-sm" id="promoCode"
+                                            maxlength="20" placeholder="optional">
                                     </div>
-                                </div>
 
-                                <div class="form-group">
-                                    <label for="promoCode">Promo Code</label>
-                                    <input type="text" class="form-control form-control-sm" id="promoCode"
-                                        maxlength="20" placeholder="optional">
-                                </div>
+                                    <div class="alert alert-info p-2 small">
+                                        Discount split: 50% LIVO commission / 50% facility payout
+                                    </div>
 
-                                <div class="alert alert-info p-2 small">
-                                    Discount split: 50% LIVO commission / 50% facility payout
-                                </div>
-
-                                <button type="submit" class="btn btn-custom btn-sm">Save Promotion</button>
+                                    <button type="submit" class="btn btn-custom btn-sm">Save Promotion</button>
                             </form>
                         </div>
                     </div>
@@ -556,23 +557,22 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="couponServices">Services Applicable</label>
-                                    <select id="couponServices" class="form-control form-control-sm" multiple>
-                                        <!-- <option>Massage</option>
-                                            <option>Facial</option>
-                                            <option>Waxing</option> -->
-
-                                            <option value=""> Comprehensive Medical Evaluation and Consultation </option>
-                                            <option value=""> Follow Up Integrative Consultation </option>
-                                            <option value=""> Bioresonance Consultation </option>
-                                            <option value=""> Nutritionist Consultation </option>
-                                            <option value=""> Chiropractor Consultation </option>
-                                            <option value=""> DNA Core </option>
-                                            <option value=""> DNA Diet </option>
-                                            <option value=""> DNA Skin </option>
-                                            <option value=""> Dutch Complete </option>
+                                    <label for="couponServices2">Services Applicable</label>
+                                    <select id="couponServices3" class="form-control form-control-sm services-picker"
+                                        name="couponServices2[]" multiple="multiple" style="width:100%;">
+                                        <option value="med_eval">Comprehensive Medical Evaluation and Consultation
+                                        </option>
+                                        <option value="follow_up">Follow Up Integrative Consultation</option>
+                                        <option value="bioreso">Bioresonance Consultation</option>
+                                        <option value="nutrition">Nutritionist Consultation</option>
+                                        <option value="chiro">Chiropractor Consultation</option>
+                                        <option value="dna_core">DNA Core</option>
+                                        <option value="dna_diet">DNA Diet</option>
+                                        <option value="dna_skin">DNA Skin</option>
+                                        <option value="dutch_complete">Dutch Complete</option>
                                     </select>
                                 </div>
+
 
                                 <div class="form-row">
                                     <div class="form-group col-sm-6">
@@ -724,6 +724,22 @@
     <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
     <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
     <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+
+
+    <!-- 3) Include jQuery + Select2 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // initialize EVERY select with the .services-picker class
+            $('.services-picker').select2({
+                placeholder: 'Select one or more services',
+                allowClear: true
+            });
+        });
+    </script>
+
 </body>
 
 </html>
