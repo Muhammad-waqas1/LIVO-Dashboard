@@ -471,7 +471,7 @@
                                         <div class="form-group">
                                             <label>Profile Images</label>
                                             <input type="file" class="form-control-file" accept=".jpg,.jpeg,.pdf"
-                                                multiple required>
+                                                required>
                                             <small class="form-text text-muted">Min 1, up to 5 files (JPEG/PDF, max 10
                                                 MB each)</small>
                                         </div>
@@ -566,16 +566,26 @@
 
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <label>Category</label>
-                                                <select class="form-control form-control-sm" multiple required>
-                                                    <option>Massage</option>
+                                                <label for="Categoryselection">Category</label>
+                                                <select id="Categoryselection" class="form-control form-control-sm"
+                                                    required>
+                                                    <!-- <option>Massage</option>
                                                     <option>Facial</option>
-                                                    <option>Waxing</option>
+                                                    <option>Waxing</option> -->
+                                                    <option>Longevity</option>
+                                                    <option>Detox</option>
+                                                    <option>Recovery</option>
+                                                    <option>Brain</option>
+                                                    <option>Skin</option>
+                                                    <option>Energy</option>
+                                                    <option>Nutrition</option>
+                                                    <option>Sleep </option>
+                                                    <option>Women Health</option>
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Focus (optional)</label>
-                                                <select class="form-control form-control-sm" multiple>
+                                                <select class="form-control form-control-sm">
                                                     <option>Relaxation</option>
                                                     <option>Therapeutic</option>
                                                 </select>
@@ -603,15 +613,28 @@
                                                 </select>
                                             </div>
                                             <div class="form-group col-sm-4">
-                                                <label>Included Services</label>
-                                                <input type="text" class="form-control form-control-sm"
-                                                    placeholder="IDs, comma-separated">
+                                                <label for="couponServices">Included Services</label>
+                                                <!-- <input type="text" class="form-control form-control-sm"
+                                                    placeholder="IDs, comma-separated"> -->
+                                                <select id="couponServices" class="form-control form-control-sm">
+                                                    <option value=""> Comprehensive Medical Evaluation and Consultation
+                                                    </option>
+                                                    <option value=""> Follow Up Integrative Consultation </option>
+                                                    <option value=""> Bioresonance Consultation </option>
+                                                    <option value=""> Nutritionist Consultation </option>
+                                                    <option value=""> Chiropractor Consultation </option>
+                                                    <option value=""> DNA Core </option>
+                                                    <option value=""> DNA Diet </option>
+                                                    <option value=""> DNA Skin </option>
+                                                    <option value=""> Dutch Complete </option>
+                                                </select>
+
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label>Tags (max 10)</label>
-                                            <select class="form-control form-control-sm" multiple>
+                                            <select class="form-control form-control-sm">
                                                 <option>Relaxing</option>
                                                 <option>Deep Tissue</option>
                                             </select>
